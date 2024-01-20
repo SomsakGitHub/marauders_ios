@@ -51,6 +51,16 @@
 		FE3584B42B5BCC12009E6D8B /* MaraudersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaraudersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3584B82B5BCC12009E6D8B /* MaraudersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaraudersUITests.swift; sourceTree = "<group>"; };
 		FE3584BA2B5BCC12009E6D8B /* MaraudersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaraudersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE3584CA2B5BCDE5009E6D8B /* PROD_KEY.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD_KEY.xcconfig; sourceTree = "<group>"; };
+		FE3584CB2B5BCE0F009E6D8B /* UAT_KEY.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = UAT_KEY.xcconfig; sourceTree = "<group>"; };
+		FE3584CC2B5BCE27009E6D8B /* SIT_KEY.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SIT_KEY.xcconfig; sourceTree = "<group>"; };
+		FE3584CE2B5BCE86009E6D8B /* project.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.prod.xcconfig; sourceTree = "<group>"; };
+		FE3584CF2B5BCE98009E6D8B /* project.uat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.uat.xcconfig; sourceTree = "<group>"; };
+		FE3584D02B5BCEAC009E6D8B /* project.sit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.sit.xcconfig; sourceTree = "<group>"; };
+		FE3584D12B5BCEC2009E6D8B /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		FE3584D32B5BD1FA009E6D8B /* debug.prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.prod.xcconfig; sourceTree = "<group>"; };
+		FE3584D42B5BD20D009E6D8B /* debug.uat.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.uat.xcconfig; sourceTree = "<group>"; };
+		FE3584D52B5BD21E009E6D8B /* debug.sit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.sit.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 		FE3584882B5BCC11009E6D8B = {
 			isa = PBXGroup;
 			children = (
+				FE3584C82B5BCDC8009E6D8B /* Configuration */,
 				FE3584932B5BCC11009E6D8B /* Marauders */,
 				FE3584AD2B5BCC12009E6D8B /* MaraudersTests */,
 				FE3584B72B5BCC12009E6D8B /* MaraudersUITests */,
@@ -128,6 +139,47 @@
 				FE3584BA2B5BCC12009E6D8B /* MaraudersUITestsLaunchTests.swift */,
 			);
 			path = MaraudersUITests;
+			sourceTree = "<group>";
+		};
+		FE3584C82B5BCDC8009E6D8B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FE3584C92B5BCDD6009E6D8B /* Keys */,
+				FE3584CD2B5BCE72009E6D8B /* Projects */,
+				FE3584D22B5BCED1009E6D8B /* Builds */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FE3584C92B5BCDD6009E6D8B /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				FE3584CA2B5BCDE5009E6D8B /* PROD_KEY.xcconfig */,
+				FE3584CB2B5BCE0F009E6D8B /* UAT_KEY.xcconfig */,
+				FE3584CC2B5BCE27009E6D8B /* SIT_KEY.xcconfig */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		FE3584CD2B5BCE72009E6D8B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				FE3584CE2B5BCE86009E6D8B /* project.prod.xcconfig */,
+				FE3584CF2B5BCE98009E6D8B /* project.uat.xcconfig */,
+				FE3584D02B5BCEAC009E6D8B /* project.sit.xcconfig */,
+				FE3584D12B5BCEC2009E6D8B /* project.xcconfig */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		FE3584D22B5BCED1009E6D8B /* Builds */ = {
+			isa = PBXGroup;
+			children = (
+				FE3584D32B5BD1FA009E6D8B /* debug.prod.xcconfig */,
+				FE3584D42B5BD20D009E6D8B /* debug.uat.xcconfig */,
+				FE3584D52B5BD21E009E6D8B /* debug.sit.xcconfig */,
+			);
+			path = Builds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +374,7 @@
 /* Begin XCBuildConfiguration section */
 		FE3584BC2B5BCC12009E6D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3584CE2B5BCE86009E6D8B /* project.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -571,6 +624,266 @@
 			};
 			name = Release;
 		};
+		FE3584D62B5BD2C4009E6D8B /* Debug-UAT */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3584CF2B5BCE98009E6D8B /* project.uat.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-UAT";
+		};
+		FE3584D72B5BD2C4009E6D8B /* Debug-UAT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marauders/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.Marauders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-UAT";
+		};
+		FE3584D82B5BD2C4009E6D8B /* Debug-UAT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Marauders";
+			};
+			name = "Debug-UAT";
+		};
+		FE3584D92B5BD2C4009E6D8B /* Debug-UAT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marauders;
+			};
+			name = "Debug-UAT";
+		};
+		FE3584DA2B5BD39E009E6D8B /* Debug-SIT */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3584D02B5BCEAC009E6D8B /* project.sit.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-SIT";
+		};
+		FE3584DB2B5BD39E009E6D8B /* Debug-SIT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marauders/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.Marauders;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-SIT";
+		};
+		FE3584DC2B5BD39E009E6D8B /* Debug-SIT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Marauders";
+			};
+			name = "Debug-SIT";
+		};
+		FE3584DD2B5BD39E009E6D8B /* Debug-SIT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U8PYJFN94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marauders;
+			};
+			name = "Debug-SIT";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +891,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE3584BC2B5BCC12009E6D8B /* Debug */,
+				FE3584D62B5BD2C4009E6D8B /* Debug-UAT */,
+				FE3584DA2B5BD39E009E6D8B /* Debug-SIT */,
 				FE3584BD2B5BCC12009E6D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -587,6 +902,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE3584BF2B5BCC12009E6D8B /* Debug */,
+				FE3584D72B5BD2C4009E6D8B /* Debug-UAT */,
+				FE3584DB2B5BD39E009E6D8B /* Debug-SIT */,
 				FE3584C02B5BCC12009E6D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -596,6 +913,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE3584C22B5BCC12009E6D8B /* Debug */,
+				FE3584D82B5BD2C4009E6D8B /* Debug-UAT */,
+				FE3584DC2B5BD39E009E6D8B /* Debug-SIT */,
 				FE3584C32B5BCC12009E6D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -605,6 +924,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE3584C52B5BCC12009E6D8B /* Debug */,
+				FE3584D92B5BD2C4009E6D8B /* Debug-UAT */,
+				FE3584DD2B5BD39E009E6D8B /* Debug-SIT */,
 				FE3584C62B5BCC12009E6D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
