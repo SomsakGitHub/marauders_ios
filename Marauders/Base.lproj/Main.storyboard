@@ -16,29 +16,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsU-VW-1Yh">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfJ-TT-HB3">
+                                <rect key="frame" x="39.333333333333343" y="103" width="314.33333333333326" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6eP-Gq-pBk">
+                                <rect key="frame" x="39.333333333333343" y="181" width="314.33333333333326" height="34"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-nJ-pUj">
+                                <rect key="frame" x="118" y="259" width="157" height="41"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="loginTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WKc-CZ-jjv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jsU-VW-1Yh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5dd-sb-W0e"/>
-                            <constraint firstItem="jsU-VW-1Yh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UHO-jF-rWN"/>
+                            <constraint firstItem="6eP-Gq-pBk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="0Do-mN-gNh"/>
+                            <constraint firstItem="pfJ-TT-HB3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8DD-js-nJz"/>
+                            <constraint firstItem="pfJ-TT-HB3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Ena-Yl-3mk"/>
+                            <constraint firstItem="Ebe-nJ-pUj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Kpl-2i-9is"/>
+                            <constraint firstItem="Ebe-nJ-pUj" firstAttribute="top" secondItem="6eP-Gq-pBk" secondAttribute="bottom" constant="44" id="P9r-Rl-f5P"/>
+                            <constraint firstItem="pfJ-TT-HB3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="ZNs-2U-3V5"/>
+                            <constraint firstItem="6eP-Gq-pBk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hvS-fV-c7F"/>
+                            <constraint firstItem="Ebe-nJ-pUj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfb-N0-H0u"/>
+                            <constraint firstItem="6eP-Gq-pBk" firstAttribute="top" secondItem="pfJ-TT-HB3" secondAttribute="bottom" constant="44" id="qSN-79-NZB"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-89" y="-28"/>
+            <point key="canvasLocation" x="-727" y="-45"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

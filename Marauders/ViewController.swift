@@ -8,11 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let viewModel = MainViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func loginTouch(_ sender: Any) {
+        print("loginTouch")
+        viewModel.testApi()
+    }
+    
 
 
 }
