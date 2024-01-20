@@ -1,0 +1,14 @@
+//
+//  UAT_KEY.xcconfig
+//  Marauders
+//
+//  Created by somsak on 20/1/2567 BE.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+APP_NAME = Marauders-UAT
+APP_BUNDLE_ID = //com.tisconet.mo5.v2
+APP_ENVIRONMENT = UAT
