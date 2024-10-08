@@ -1,13 +1,8 @@
-//
-//  TabBarView.swift
-//  marauders
-//
-//  Created by somsak on 7/9/2567 BE.
-//
+//  Created by somsak on 8/10/2567 BE.
 
 import SwiftUI
 
-struct TabBarView: View {
+struct HomeView: View {
     var body: some View {
         TabView {
             // First Tab
@@ -27,15 +22,15 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarViewContentView: View {
+struct HomeViewContentView: View {
     var body: some View {
-        TabBarView()
+        HomeView()
     }
 }
 
-struct TabBarViewContentView_Previews: PreviewProvider {
+struct HomeViewContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarViewContentView()
+        HomeViewContentView()
     }
 }
 

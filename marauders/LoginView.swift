@@ -1,21 +1,16 @@
-//
-//  ContentView.swift
-//  marauders
-//
-//  Created by somsak on 13/4/2567 BE.
-//
+//  Created by somsak on 8/10/2567 BE.
 
 import SwiftUI
 
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    @State private var showingAlert = false
-    @State private var loginMessage = ""
     
     // Use @AppStorage to store the login state globally
-    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
-    var windowMain: UIWindow?
+//    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    
+    @EnvironmentObject private var appRootManager: AppRootManager
+    
     var body: some View {
         VStack(spacing: 20) {
             // App Title
@@ -49,9 +44,9 @@ struct LoginView: View {
             Spacer()
         }
         .padding()
-        .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Login"), message: Text(loginMessage), dismissButton: .default(Text("OK")))
-        }
+//        .alert(isPresented: $showingAlert) {
+//            Alert(title: Text("Login"), message: Text(loginMessage), dismissButton: .default(Text("OK")))
+//        }
     }
     
     func handleLogin() {
@@ -63,37 +58,29 @@ struct LoginView: View {
 //        } else {
 //            loginMessage = "Invalid username or password."
 //        }
-        isLoggedIn = true
-        showingAlert = true
         
-//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? AppDelegate {
-//                    let homeView = TabBarView()
-//                    sceneDelegate.window?.rootViewController = UIHostingController(rootView: homeView)
-//                }
+//        isLoggedIn = true
+//        showingAlert = true
         
-//        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? AppDelegate
-//        
-//        
-//        let homeView = TabBarView()
-//        sceneDelegate?.window?.rootViewController = UIHostingController(rootView: homeView)
+        appRootManager.currentRoot = .home
     }
 }
 
-struct ContentView: View {
+struct LoginViewContentView: View {
     var isLoggedIn: Bool = false
     
     var body: some View {
         if isLoggedIn {
-            TabBarView()
+            HomeView()
         } else {
             LoginView()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginViewContentView().environmentObject(AppRootManager())
     }
 }
 
