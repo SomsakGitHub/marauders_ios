@@ -15,7 +15,7 @@ struct LoginView: View {
     
     // Use @AppStorage to store the login state globally
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
-    
+    var windowMain: UIWindow?
     var body: some View {
         VStack(spacing: 20) {
             // App Title
@@ -55,6 +55,7 @@ struct LoginView: View {
     }
     
     func handleLogin() {
+
 //        if username.isEmpty || password.isEmpty {
 //            loginMessage = "Please enter both username and password."
 //        } else if username == "user" && password == "password" {
@@ -64,11 +65,22 @@ struct LoginView: View {
 //        }
         isLoggedIn = true
         showingAlert = true
+        
+//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? AppDelegate {
+//                    let homeView = TabBarView()
+//                    sceneDelegate.window?.rootViewController = UIHostingController(rootView: homeView)
+//                }
+        
+//        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? AppDelegate
+//        
+//        
+//        let homeView = TabBarView()
+//        sceneDelegate?.window?.rootViewController = UIHostingController(rootView: homeView)
     }
 }
 
 struct ContentView: View {
-    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    var isLoggedIn: Bool = false
     
     var body: some View {
         if isLoggedIn {
