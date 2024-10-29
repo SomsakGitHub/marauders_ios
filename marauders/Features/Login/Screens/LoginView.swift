@@ -15,6 +15,7 @@ struct LoginView: View {
     @Query private var items: [Item]
     
     @EnvironmentObject private var appRootManager: AppRootManager
+    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
 
     var body: some View {
         VStack(spacing: 20) {
@@ -36,7 +37,9 @@ struct LoginView: View {
                 .cornerRadius(8)
             
             // Login Button
-            Button(action: handleLogin) {
+            Button(
+                action: handleLogin
+            ){
                 Text("Login")
                     .frame(maxWidth: .infinity)
                     .padding()
@@ -66,6 +69,8 @@ struct LoginView: View {
         
 //        isLoggedIn = true
 //        showingAlert = true
+        
+        viewModel.login()
         
         appRootManager.currentRoot = .home
     }
