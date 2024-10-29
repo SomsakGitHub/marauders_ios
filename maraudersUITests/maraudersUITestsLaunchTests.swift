@@ -1,13 +1,13 @@
 //
-//  maraudersUITestsLaunchTests.swift
-//  maraudersUITests
+//  MaraudersUITestsLaunchTests.swift
+//  MaraudersUITests
 //
-//  Created by somsak on 13/4/2567 BE.
+//  Created by somsak on 17/10/2567 BE.
 //
 
 import XCTest
 
-final class maraudersUITestsLaunchTests: XCTestCase {
+final class MaraudersUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
@@ -17,6 +17,7 @@ final class maraudersUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()

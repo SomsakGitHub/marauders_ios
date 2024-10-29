@@ -1,4 +1,9 @@
-//  Created by somsak on 8/10/2567 BE.
+//
+//  HomeView.swift
+//  Marauders
+//
+//  Created by somsak on 17/10/2567 BE.
+//
 
 import SwiftUI
 
@@ -22,15 +27,6 @@ struct HomeView: View {
     }
 }
 
-struct HomeViewContentView: View {
-    var body: some View {
-        HomeView()
-    }
+#Preview {
+    HomeView()
 }
-
-struct HomeViewContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeViewContentView()
-    }
-}
-

@@ -1,16 +1,21 @@
-//  Created by somsak on 8/10/2567 BE.
+//
+//  ContentView.swift
+//  Marauders
+//
+//  Created by somsak on 17/10/2567 BE.
+//
 
 import SwiftUI
+import SwiftData
 
 struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    
-    // Use @AppStorage to store the login state globally
-//    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Item]
     
     @EnvironmentObject private var appRootManager: AppRootManager
-    
+
     var body: some View {
         VStack(spacing: 20) {
             // App Title
@@ -64,7 +69,69 @@ struct LoginView: View {
         
         appRootManager.currentRoot = .home
     }
+
+    private func addItem() {
+        withAnimation {
+            let newItem = Item(timestamp: Date())
+            modelContext.insert(newItem)
+        }
+    }
+
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                modelContext.delete(items[index])
+            }
+        }
+    }
 }
+
+//struct ContentView: View {
+//    @Environment(\.modelContext) private var modelContext
+//    @Query private var items: [Item]
+//
+//    var body: some View {
+//        NavigationSplitView {
+//            List {
+//                ForEach(items) { item in
+//                    NavigationLink {
+//                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+//                    } label: {
+//                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+//                    }
+//                }
+//                .onDelete(perform: deleteItems)
+//            }
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    EditButton()
+//                }
+//                ToolbarItem {
+//                    Button(action: addItem) {
+//                        Label("Add Item", systemImage: "plus")
+//                    }
+//                }
+//            }
+//        } detail: {
+//            Text("Select an item")
+//        }
+//    }
+//
+//    private func addItem() {
+//        withAnimation {
+//            let newItem = Item(timestamp: Date())
+//            modelContext.insert(newItem)
+//        }
+//    }
+//
+//    private func deleteItems(offsets: IndexSet) {
+//        withAnimation {
+//            for index in offsets {
+//                modelContext.delete(items[index])
+//            }
+//        }
+//    }
+//}
 
 struct LoginViewContentView: View {
     var isLoggedIn: Bool = false
@@ -78,9 +145,21 @@ struct LoginViewContentView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginViewContentView().environmentObject(AppRootManager())
-    }
+
+#Preview {
+    LoginViewContentView()
+        .modelContainer(for: Item.self, inMemory: true)
+        .environmentObject(AppRootManager())
 }
 
+import Foundation
+
+final class AppRootManager: ObservableObject {
+    
+    @Published var currentRoot: eAppRoots = .login
+    
+    enum eAppRoots {
+        case login
+        case home
+    }
+}
