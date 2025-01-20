@@ -10,6 +10,7 @@ import SwiftData
 
 struct LoginView: View {
     @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject private var appRootManager: AppRootManager
     
     var body: some View {
         VStack(spacing: 20) {
@@ -57,6 +58,7 @@ struct LoginView: View {
     func handleFacebookSignIn() {
         // Add Facebook Sign-In logic here
         print("Facebook Sign-In")
+        appRootManager.currentRoot = .home
     }
     
 //    @Query private var items: [Item]
@@ -105,6 +107,6 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
 //        .modelContainer(for: Item.self, inMemory: true)
+    LoginView()
 }

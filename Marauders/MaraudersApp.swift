@@ -10,23 +10,30 @@ import SwiftData
 
 @main
 struct MaraudersApp: App {
-//    var sharedModelContainer: ModelContainer = {
-//        let schema = Schema([
-//            Item.self,
-//        ])
-//        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-//
-//        do {
-//            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-//        } catch {
-//            fatalError("Could not create ModelContainer: \(error)")
-//        }
-//    }()
+    @StateObject private var appRootManager = AppRootManager()
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            Group {
+                switch appRootManager.currentRoot {
+                case .login:
+                    LoginView()
+                case .home:
+                    HomeView()
+                        .transition(.scale.animation(.easeInOut(duration: 0.5)))
+                }
+            }
         }
-//        .modelContainer(sharedModelContainer)
+        .environmentObject(appRootManager)
+    }
+}
+
+final class AppRootManager: ObservableObject {
+    
+    @Published var currentRoot: eAppRoots = .login
+    
+    enum eAppRoots {
+        case login
+        case home
     }
 }
