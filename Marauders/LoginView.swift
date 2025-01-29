@@ -12,98 +12,51 @@ struct LoginView: View {
     @Environment(\.modelContext) private var modelContext
     @EnvironmentObject private var appRootManager: AppRootManager
     
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        VStack(spacing: 20) {
-            // App Logo or Title
-            Text("Login!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            Spacer()
-            
-            // Login Buttons
-            VStack(spacing: 15) {
-                
-                // Facebook Login Button
+            VStack {
+                Text("Login")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 20)
+
+                // Email Field
+                TextField("Email", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .autocapitalization(.none)
+                    .padding()
+
+                // Password Field
+                SecureField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+
+                // Login Button
                 Button(action: {
-                    handleFacebookSignIn()
+                    loginUser()
                 }) {
-                    HStack {
-                        Image(systemName: "facebook")
-                            .foregroundColor(.white)
-                        Text("Sign in with Facebook")
-                            .foregroundColor(.white)
-                            .bold()
-                    }
-                    .frame(maxWidth: .infinity, minHeight: 50)
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                    Text("Login")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                 }
-                
-                .frame(height: 50)
-                .cornerRadius(10)
+                Spacer()
             }
-            
-            Spacer()
-            
-            // Footer
-            Text("By signing in, you agree to our Terms & Privacy Policy.")
-                .font(.footnote)
-                .foregroundColor(.gray)
-                .multilineTextAlignment(.center)
+            .padding()
         }
-        .padding()
-    }
-    
-    func handleFacebookSignIn() {
-        // Add Facebook Sign-In logic here
-        print("Facebook Sign-In")
-        appRootManager.currentRoot = .home
-    }
-    
-//    @Query private var items: [Item]
-//
-//    var body: some View {
-//        NavigationSplitView {
-//            List {
-//                ForEach(items) { item in
-//                    NavigationLink {
-//                        Text("Item at index \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-//                    } label: {
-//                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-//                    }
-//                }
-//                .onDelete(perform: deleteItems)
-//            }
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    EditButton()
-//                }
-//                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-//                }
-//            }
-//        } detail: {
-//            Text("Select an item")
-//        }
-//    }
-//
-//    private func addItem() {
-//        withAnimation {
-//            let newItem = Item(timestamp: Date())
-//            modelContext.insert(newItem)
-//        }
-//    }
-//
-//    private func deleteItems(offsets: IndexSet) {
-//        withAnimation {
-//            for index in offsets {
-//                modelContext.delete(items[index])
-//            }
-//        }
-//    }
+
+        private func loginUser() {
+            // Implement login logic here
+            appRootManager.currentRoot = .home
+            print("Logging in with: \(email) and \(password)")
+        }
 }
 
 #Preview {
