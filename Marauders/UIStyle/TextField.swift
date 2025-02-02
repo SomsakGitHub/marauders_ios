@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+enum StyleTextField {
+    case emailField
+    case secureTextField
+    case plainField
+    case phoneNumberField
+}
+
 struct CustomTextField: View {
     private var style: StyleTextField?
     
@@ -98,14 +105,6 @@ struct OvalTextFieldStyle: TextFieldStyle {
             .padding(10)
     }
 }
-
-enum StyleTextField {
-    case emailField
-    case secureTextField
-    case plainField
-    case phoneNumberField
-}
-
 
 #Preview {
 //    CustomTextField(style: .plainTextField)
