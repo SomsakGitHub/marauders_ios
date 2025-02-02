@@ -58,9 +58,9 @@ struct SecureTextField: View {
 }
 
 struct PlainField: View {
-    @State private var firstName: String = ""
+    @State private var text: String = ""
     var body: some View {
-        TextField("Text", text: $firstName)
+        TextField("Text", text: $text)
             .textFieldStyle(OvalTextFieldStyle())
             .padding()
     }

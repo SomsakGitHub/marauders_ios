@@ -7,31 +7,68 @@
 
 import SwiftUI
 
-enum StyleButton {
-    case primary
-    case secondary
-}
-
 struct CustomButton: View {
-    private var style: StyleButton?
+    private var style: Style?
+    let action: () -> Void
     
-    init(style: StyleButton?) {
+    init(style: Style?, action: @escaping () -> Void) {
         self.style = style
+        self.action = action
+    }
+    
+    enum Style {
+        case primary
+        case secondary
     }
     
     var body: some View {
         switch style {
         case .primary:
-            Primary()
+            PrimaryButton(lebel: "PrimaryButton", action: self.action)
         case .secondary:
-            Secondary()
+            SecondaryButton(lebel: "SecondaryButton", action: self.action)
         default:
-            EmailField()
+            SecondaryButton(lebel: "SecondaryButton", action: self.action)
         }
     }
 }
 
-struct BlueButton: ButtonStyle {
+struct PrimaryButton: View {
+    let action: () -> Void
+    var label: String = ""
+
+    init(lebel: String, action: @escaping () -> Void) {
+        self.label = lebel
+        self.action = action
+    }
+    
+    var body: some View {
+        Button(self.label){
+            self.action()
+        }.buttonStyle(OvalButtonStyle())
+            .font(.headline)
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity)
+    }
+
+}
+
+struct SecondaryButton: View {
+    let action: () -> Void
+    var label: String = ""
+
+    init(lebel: String, action: @escaping () -> Void) {
+        self.label = lebel
+        self.action = action
+    }
+    var body: some View {
+        Button(self.label){
+            self.action()
+        }.buttonStyle(OvalButtonStyle())
+    }
+}
+
+struct OvalButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
@@ -42,5 +79,6 @@ struct BlueButton: ButtonStyle {
 }
 
 #Preview {
-    CustomButton(style: .primary)
+    PrimaryButton(lebel: "PrimaryButton", action: {})
+    SecondaryButton(lebel: "SecondaryButton", action: {})
 }

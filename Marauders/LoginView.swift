@@ -26,18 +26,12 @@ struct LoginView: View {
                 CustomTextField(style: .secureTextField)
 
                 // Login Button
-                Button(action: {
+                CustomButton(style: .primary, action: {
                     loginUser()
-                }) {
-                    Text("Login")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                        .padding(.horizontal)
-                }
+                })
+//                SecondaryButton(action: {
+//                    loginUser()
+//                })
                 Spacer()
             }
             .padding()
