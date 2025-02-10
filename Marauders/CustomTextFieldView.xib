@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextFieldView" customModule="marauders" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="BXM-qu-73e" id="Jqv-fA-m3T"/>
+                <outlet property="view" destination="iN0-l3-epB" id="p7n-wJ-yWF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="119"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXM-qu-73e">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="119"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BXM-qu-73e" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Ewn-62-WVB"/>
+                <constraint firstItem="BXM-qu-73e" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yd6-Ad-zoU"/>
+                <constraint firstItem="BXM-qu-73e" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ZXJ-sP-aqX"/>
+                <constraint firstItem="BXM-qu-73e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="b7N-ay-lMJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323" y="-87"/>
+        </view>
+    </objects>
+</document>

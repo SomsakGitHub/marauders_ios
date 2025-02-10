@@ -1,10 +1,3 @@
-//
-//  maraudersTests.swift
-//  maraudersTests
-//
-//  Created by somsak02061 on 10/2/2568 BE.
-//
-
 import Testing
 @testable import marauders
 
