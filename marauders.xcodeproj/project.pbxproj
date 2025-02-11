@@ -7,75 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		8DAC6A9F2D59947900F7212B /* PBXContainerItemProxy */ = {
+		8DE4A8962D5B0BCC0071B32A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8DAC6A7D2D59947800F7212B /* Project object */;
+			containerPortal = 8DE4A8742D5B0BCA0071B32A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DAC6A842D59947800F7212B;
-			remoteInfo = marauders;
+			remoteGlobalIDString = 8DE4A87B2D5B0BCA0071B32A;
+			remoteInfo = Marauders;
 		};
-		8DAC6AA92D59947900F7212B /* PBXContainerItemProxy */ = {
+		8DE4A8A02D5B0BCC0071B32A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8DAC6A7D2D59947800F7212B /* Project object */;
+			containerPortal = 8DE4A8742D5B0BCA0071B32A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DAC6A842D59947800F7212B;
-			remoteInfo = marauders;
+			remoteGlobalIDString = 8DE4A87B2D5B0BCA0071B32A;
+			remoteInfo = Marauders;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8DAC6A852D59947800F7212B /* marauders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marauders.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DAC6A9E2D59947900F7212B /* maraudersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maraudersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DAC6AA82D59947900F7212B /* maraudersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maraudersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE4A87C2D5B0BCA0071B32A /* Marauders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marauders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE4A8952D5B0BCC0071B32A /* MaraudersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaraudersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE4A89F2D5B0BCC0071B32A /* MaraudersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaraudersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		8DAC6AB02D59947900F7212B /* Exceptions for "marauders" folder in "marauders" target */ = {
+		8DE4A8A72D5B0BCC0071B32A /* Exceptions for "Marauders" folder in "Marauders" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 8DAC6A842D59947800F7212B /* marauders */;
+			target = 8DE4A87B2D5B0BCA0071B32A /* Marauders */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8DAC6A872D59947800F7212B /* marauders */ = {
+		8DE4A87E2D5B0BCA0071B32A /* Marauders */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				8DAC6AB02D59947900F7212B /* Exceptions for "marauders" folder in "marauders" target */,
+				8DE4A8A72D5B0BCC0071B32A /* Exceptions for "Marauders" folder in "Marauders" target */,
 			);
-			path = marauders;
+			path = Marauders;
 			sourceTree = "<group>";
 		};
-		8DAC6AA12D59947900F7212B /* maraudersTests */ = {
+		8DE4A8982D5B0BCC0071B32A /* MaraudersTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = maraudersTests;
+			path = MaraudersTests;
 			sourceTree = "<group>";
 		};
-		8DAC6AAB2D59947900F7212B /* maraudersUITests */ = {
+		8DE4A8A22D5B0BCC0071B32A /* MaraudersUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = maraudersUITests;
+			path = MaraudersUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8DAC6A822D59947800F7212B /* Frameworks */ = {
+		8DE4A8792D5B0BCA0071B32A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6A9B2D59947900F7212B /* Frameworks */ = {
+		8DE4A8922D5B0BCC0071B32A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6AA52D59947900F7212B /* Frameworks */ = {
+		8DE4A89C2D5B0BCC0071B32A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8DAC6A7C2D59947800F7212B = {
+		8DE4A8732D5B0BCA0071B32A = {
 			isa = PBXGroup;
 			children = (
-				8DAC6A872D59947800F7212B /* marauders */,
-				8DAC6AA12D59947900F7212B /* maraudersTests */,
-				8DAC6AAB2D59947900F7212B /* maraudersUITests */,
-				8DAC6A862D59947800F7212B /* Products */,
+				8DE4A87E2D5B0BCA0071B32A /* Marauders */,
+				8DE4A8982D5B0BCC0071B32A /* MaraudersTests */,
+				8DE4A8A22D5B0BCC0071B32A /* MaraudersUITests */,
+				8DE4A87D2D5B0BCA0071B32A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8DAC6A862D59947800F7212B /* Products */ = {
+		8DE4A87D2D5B0BCA0071B32A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DAC6A852D59947800F7212B /* marauders.app */,
-				8DAC6A9E2D59947900F7212B /* maraudersTests.xctest */,
-				8DAC6AA82D59947900F7212B /* maraudersUITests.xctest */,
+				8DE4A87C2D5B0BCA0071B32A /* Marauders.app */,
+				8DE4A8952D5B0BCC0071B32A /* MaraudersTests.xctest */,
+				8DE4A89F2D5B0BCC0071B32A /* MaraudersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DAC6A842D59947800F7212B /* marauders */ = {
+		8DE4A87B2D5B0BCA0071B32A /* Marauders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DAC6AB12D59947900F7212B /* Build configuration list for PBXNativeTarget "marauders" */;
+			buildConfigurationList = 8DE4A8A82D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "Marauders" */;
 			buildPhases = (
-				8DAC6A812D59947800F7212B /* Sources */,
-				8DAC6A822D59947800F7212B /* Frameworks */,
-				8DAC6A832D59947800F7212B /* Resources */,
+				8DE4A8782D5B0BCA0071B32A /* Sources */,
+				8DE4A8792D5B0BCA0071B32A /* Frameworks */,
+				8DE4A87A2D5B0BCA0071B32A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8DAC6A872D59947800F7212B /* marauders */,
+				8DE4A87E2D5B0BCA0071B32A /* Marauders */,
 			);
-			name = marauders;
+			name = Marauders;
 			packageProductDependencies = (
 			);
-			productName = marauders;
-			productReference = 8DAC6A852D59947800F7212B /* marauders.app */;
+			productName = Marauders;
+			productReference = 8DE4A87C2D5B0BCA0071B32A /* Marauders.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8DAC6A9D2D59947900F7212B /* maraudersTests */ = {
+		8DE4A8942D5B0BCC0071B32A /* MaraudersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DAC6AB62D59947900F7212B /* Build configuration list for PBXNativeTarget "maraudersTests" */;
+			buildConfigurationList = 8DE4A8AD2D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "MaraudersTests" */;
 			buildPhases = (
-				8DAC6A9A2D59947900F7212B /* Sources */,
-				8DAC6A9B2D59947900F7212B /* Frameworks */,
-				8DAC6A9C2D59947900F7212B /* Resources */,
+				8DE4A8912D5B0BCC0071B32A /* Sources */,
+				8DE4A8922D5B0BCC0071B32A /* Frameworks */,
+				8DE4A8932D5B0BCC0071B32A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8DAC6AA02D59947900F7212B /* PBXTargetDependency */,
+				8DE4A8972D5B0BCC0071B32A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8DAC6AA12D59947900F7212B /* maraudersTests */,
+				8DE4A8982D5B0BCC0071B32A /* MaraudersTests */,
 			);
-			name = maraudersTests;
+			name = MaraudersTests;
 			packageProductDependencies = (
 			);
-			productName = maraudersTests;
-			productReference = 8DAC6A9E2D59947900F7212B /* maraudersTests.xctest */;
+			productName = MaraudersTests;
+			productReference = 8DE4A8952D5B0BCC0071B32A /* MaraudersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8DAC6AA72D59947900F7212B /* maraudersUITests */ = {
+		8DE4A89E2D5B0BCC0071B32A /* MaraudersUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DAC6AB92D59947900F7212B /* Build configuration list for PBXNativeTarget "maraudersUITests" */;
+			buildConfigurationList = 8DE4A8B02D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "MaraudersUITests" */;
 			buildPhases = (
-				8DAC6AA42D59947900F7212B /* Sources */,
-				8DAC6AA52D59947900F7212B /* Frameworks */,
-				8DAC6AA62D59947900F7212B /* Resources */,
+				8DE4A89B2D5B0BCC0071B32A /* Sources */,
+				8DE4A89C2D5B0BCC0071B32A /* Frameworks */,
+				8DE4A89D2D5B0BCC0071B32A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8DAC6AAA2D59947900F7212B /* PBXTargetDependency */,
+				8DE4A8A12D5B0BCC0071B32A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8DAC6AAB2D59947900F7212B /* maraudersUITests */,
+				8DE4A8A22D5B0BCC0071B32A /* MaraudersUITests */,
 			);
-			name = maraudersUITests;
+			name = MaraudersUITests;
 			packageProductDependencies = (
 			);
-			productName = maraudersUITests;
-			productReference = 8DAC6AA82D59947900F7212B /* maraudersUITests.xctest */;
+			productName = MaraudersUITests;
+			productReference = 8DE4A89F2D5B0BCC0071B32A /* MaraudersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8DAC6A7D2D59947800F7212B /* Project object */ = {
+		8DE4A8742D5B0BCA0071B32A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					8DAC6A842D59947800F7212B = {
+					8DE4A87B2D5B0BCA0071B32A = {
 						CreatedOnToolsVersion = 16.1;
 					};
-					8DAC6A9D2D59947900F7212B = {
+					8DE4A8942D5B0BCC0071B32A = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 8DAC6A842D59947800F7212B;
+						TestTargetID = 8DE4A87B2D5B0BCA0071B32A;
 					};
-					8DAC6AA72D59947900F7212B = {
+					8DE4A89E2D5B0BCC0071B32A = {
 						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 8DAC6A842D59947800F7212B;
+						TestTargetID = 8DE4A87B2D5B0BCA0071B32A;
 					};
 				};
 			};
-			buildConfigurationList = 8DAC6A802D59947800F7212B /* Build configuration list for PBXProject "marauders" */;
+			buildConfigurationList = 8DE4A8772D5B0BCA0071B32A /* Build configuration list for PBXProject "Marauders" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8DAC6A7C2D59947800F7212B;
+			mainGroup = 8DE4A8732D5B0BCA0071B32A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8DAC6A862D59947800F7212B /* Products */;
+			productRefGroup = 8DE4A87D2D5B0BCA0071B32A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DAC6A842D59947800F7212B /* marauders */,
-				8DAC6A9D2D59947900F7212B /* maraudersTests */,
-				8DAC6AA72D59947900F7212B /* maraudersUITests */,
+				8DE4A87B2D5B0BCA0071B32A /* Marauders */,
+				8DE4A8942D5B0BCC0071B32A /* MaraudersTests */,
+				8DE4A89E2D5B0BCC0071B32A /* MaraudersUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8DAC6A832D59947800F7212B /* Resources */ = {
+		8DE4A87A2D5B0BCA0071B32A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6A9C2D59947900F7212B /* Resources */ = {
+		8DE4A8932D5B0BCC0071B32A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6AA62D59947900F7212B /* Resources */ = {
+		8DE4A89D2D5B0BCC0071B32A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8DAC6A812D59947800F7212B /* Sources */ = {
+		8DE4A8782D5B0BCA0071B32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6A9A2D59947900F7212B /* Sources */ = {
+		8DE4A8912D5B0BCC0071B32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DAC6AA42D59947900F7212B /* Sources */ = {
+		8DE4A89B2D5B0BCC0071B32A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8DAC6AA02D59947900F7212B /* PBXTargetDependency */ = {
+		8DE4A8972D5B0BCC0071B32A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8DAC6A842D59947800F7212B /* marauders */;
-			targetProxy = 8DAC6A9F2D59947900F7212B /* PBXContainerItemProxy */;
+			target = 8DE4A87B2D5B0BCA0071B32A /* Marauders */;
+			targetProxy = 8DE4A8962D5B0BCC0071B32A /* PBXContainerItemProxy */;
 		};
-		8DAC6AAA2D59947900F7212B /* PBXTargetDependency */ = {
+		8DE4A8A12D5B0BCC0071B32A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8DAC6A842D59947800F7212B /* marauders */;
-			targetProxy = 8DAC6AA92D59947900F7212B /* PBXContainerItemProxy */;
+			target = 8DE4A87B2D5B0BCA0071B32A /* Marauders */;
+			targetProxy = 8DE4A8A02D5B0BCC0071B32A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8DAC6AB22D59947900F7212B /* Debug */ = {
+		8DE4A8A92D5B0BCC0071B32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9U8PYJFN94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = marauders/Info.plist;
+				INFOPLIST_FILE = Marauders/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.marauders;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.Marauders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		8DAC6AB32D59947900F7212B /* Release */ = {
+		8DE4A8AA2D5B0BCC0071B32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9U8PYJFN94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = marauders/Info.plist;
+				INFOPLIST_FILE = Marauders/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.marauders;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.Marauders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,7 +338,7 @@
 			};
 			name = Release;
 		};
-		8DAC6AB42D59947900F7212B /* Debug */ = {
+		8DE4A8AB2D5B0BCC0071B32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -401,7 +401,7 @@
 			};
 			name = Debug;
 		};
-		8DAC6AB52D59947900F7212B /* Release */ = {
+		8DE4A8AC2D5B0BCC0071B32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -457,7 +457,7 @@
 			};
 			name = Release;
 		};
-		8DAC6AB72D59947900F7212B /* Debug */ = {
+		8DE4A8AE2D5B0BCC0071B32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,16 +467,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.maraudersTests;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/marauders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Marauders";
 			};
 			name = Debug;
 		};
-		8DAC6AB82D59947900F7212B /* Release */ = {
+		8DE4A8AF2D5B0BCC0071B32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,16 +486,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.maraudersTests;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/marauders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marauders.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Marauders";
 			};
 			name = Release;
 		};
-		8DAC6ABA2D59947900F7212B /* Debug */ = {
+		8DE4A8B12D5B0BCC0071B32A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -503,16 +503,16 @@
 				DEVELOPMENT_TEAM = 9U8PYJFN94;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.maraudersUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = marauders;
+				TEST_TARGET_NAME = Marauders;
 			};
 			name = Debug;
 		};
-		8DAC6ABB2D59947900F7212B /* Release */ = {
+		8DE4A8B22D5B0BCC0071B32A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -520,55 +520,55 @@
 				DEVELOPMENT_TEAM = 9U8PYJFN94;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = somsak.maraudersUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = somsak.MaraudersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = marauders;
+				TEST_TARGET_NAME = Marauders;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DAC6A802D59947800F7212B /* Build configuration list for PBXProject "marauders" */ = {
+		8DE4A8772D5B0BCA0071B32A /* Build configuration list for PBXProject "Marauders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DAC6AB42D59947900F7212B /* Debug */,
-				8DAC6AB52D59947900F7212B /* Release */,
+				8DE4A8AB2D5B0BCC0071B32A /* Debug */,
+				8DE4A8AC2D5B0BCC0071B32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DAC6AB12D59947900F7212B /* Build configuration list for PBXNativeTarget "marauders" */ = {
+		8DE4A8A82D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "Marauders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DAC6AB22D59947900F7212B /* Debug */,
-				8DAC6AB32D59947900F7212B /* Release */,
+				8DE4A8A92D5B0BCC0071B32A /* Debug */,
+				8DE4A8AA2D5B0BCC0071B32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DAC6AB62D59947900F7212B /* Build configuration list for PBXNativeTarget "maraudersTests" */ = {
+		8DE4A8AD2D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "MaraudersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DAC6AB72D59947900F7212B /* Debug */,
-				8DAC6AB82D59947900F7212B /* Release */,
+				8DE4A8AE2D5B0BCC0071B32A /* Debug */,
+				8DE4A8AF2D5B0BCC0071B32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DAC6AB92D59947900F7212B /* Build configuration list for PBXNativeTarget "maraudersUITests" */ = {
+		8DE4A8B02D5B0BCC0071B32A /* Build configuration list for PBXNativeTarget "MaraudersUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DAC6ABA2D59947900F7212B /* Debug */,
-				8DAC6ABB2D59947900F7212B /* Release */,
+				8DE4A8B12D5B0BCC0071B32A /* Debug */,
+				8DE4A8B22D5B0BCC0071B32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8DAC6A7D2D59947800F7212B /* Project object */;
+	rootObject = 8DE4A8742D5B0BCA0071B32A /* Project object */;
 }
