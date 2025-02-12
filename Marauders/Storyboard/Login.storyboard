@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8rH-hg-cTl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="0Vy-45-cxl">
+            <objects>
+                <viewController id="8rH-hg-cTl" customClass="LoginViewController" customModule="Marauders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tbw-Bh-WBA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMj-bb-2w4">
+                                <rect key="frame" x="175.66666666666666" y="139" width="41.666666666666657" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lSD-b9-lIH">
+                                <rect key="frame" x="39.333333333333343" y="199.33333333333334" width="314.33333333333326" height="101.33333333333334"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-YJ-i1k" customClass="CustomTextFieldView" customModule="Marauders" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="42.666666666666664"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-XI-ai6" customClass="CustomTextFieldView" customModule="Marauders" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58.666666666666657" width="314.33333333333331" height="42.666666666666657"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I5-mK-nFi">
+                                <rect key="frame" x="159" y="380.66666666666669" width="75" height="40.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="loginTouch:" destination="8rH-hg-cTl" eventType="touchUpInside" id="Ecz-aQ-9Dh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="reS-bh-FDb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nrM-XI-ai6" firstAttribute="height" secondItem="tbw-Bh-WBA" secondAttribute="height" multiplier="0.05" id="2k2-A1-maw"/>
+                            <constraint firstItem="KMj-bb-2w4" firstAttribute="centerX" secondItem="tbw-Bh-WBA" secondAttribute="centerX" id="3vf-VA-dl4"/>
+                            <constraint firstItem="6I5-mK-nFi" firstAttribute="centerX" secondItem="tbw-Bh-WBA" secondAttribute="centerX" id="8E8-ca-nGw"/>
+                            <constraint firstItem="lSD-b9-lIH" firstAttribute="width" secondItem="tbw-Bh-WBA" secondAttribute="width" multiplier="0.8" id="MwC-Ox-oJJ"/>
+                            <constraint firstItem="6I5-mK-nFi" firstAttribute="top" secondItem="lSD-b9-lIH" secondAttribute="bottom" constant="80" id="arq-FK-lDJ"/>
+                            <constraint firstItem="KMj-bb-2w4" firstAttribute="top" secondItem="tbw-Bh-WBA" secondAttribute="topMargin" constant="80" id="axE-KE-FBu"/>
+                            <constraint firstItem="3FE-YJ-i1k" firstAttribute="height" secondItem="tbw-Bh-WBA" secondAttribute="height" multiplier="0.05" id="eP1-Q5-Kwt"/>
+                            <constraint firstItem="lSD-b9-lIH" firstAttribute="top" secondItem="KMj-bb-2w4" secondAttribute="bottom" constant="40" id="fqo-cU-kaV"/>
+                            <constraint firstItem="lSD-b9-lIH" firstAttribute="centerX" secondItem="tbw-Bh-WBA" secondAttribute="centerX" id="giL-Fw-fKR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextFieldView" destination="3FE-YJ-i1k" id="Wqb-6K-U1c"/>
+                        <outlet property="passwordTextFieldView" destination="nrM-XI-ai6" id="HFS-0K-uWs"/>
+                        <outlet property="text" destination="KMj-bb-2w4" id="Wzo-Kd-nl4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apz-t1-jbZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

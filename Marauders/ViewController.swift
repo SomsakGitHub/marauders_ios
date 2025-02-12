@@ -1,8 +1,8 @@
 import UIKit
 
-class HomeViewController: BaseViewController {
+class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("HomeViewController")
+        print("ViewController")
     }
 }

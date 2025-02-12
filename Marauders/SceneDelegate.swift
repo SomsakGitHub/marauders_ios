@@ -10,6 +10,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let sceneWindowScene = (scene as? UIWindowScene) else { return }
         print("sceneWindowScene=>", sceneWindowScene)
+        setInitApp(scene: scene)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -41,6 +42,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    
+    func setInitApp(scene: UIScene) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+//        let sceneFactory = DefaultSceneFactory()
+//        window?.rootViewController = sceneFactory.makeScene(scene: .splashScreen)
+        window?.rootViewController = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()
+        window?.makeKeyAndVisible()
     }
 
 }
