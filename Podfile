@@ -7,6 +7,8 @@ target 'Marauders' do
 
   # Pods for Marauders
 	pod 'SwiftLint'
+	pod 'RxSwift', '~> 6.6.0'
+	pod 'Alamofire', '~> 5.9.0'
 
   target 'MaraudersTests' do
     inherit! :search_paths
