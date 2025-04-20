@@ -5,7 +5,7 @@ protocol HomeViewControllerInput: AnyObject {
 }
 
 protocol HomeViewControllerOutput: AnyObject {
-//    func login(req: LoginReq)
+//    func displaySomething(viewModel: Home.Something.ViewModel)
 }
 
 class HomeViewController: BaseViewController {
@@ -30,7 +30,7 @@ class HomeViewController: BaseViewController {
 // MARK: - display view model from HomePresenter
 
 extension HomeViewController: HomeViewControllerInput {
-    func displaySomething() {
-        //nameTextField.text = viewModel.name
-    }
+//    func displaySomething() {
+//        nameTextField.text = viewModel.name
+//    }
 }

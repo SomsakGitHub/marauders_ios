@@ -16,9 +16,9 @@ class HomeRouter {
 // MARK: Routing (navigating to other screens)
 
 extension HomeRouter: HomeRoutingLogic {
-    func otp() {
+//    func otp() {
 //        let vc = UIStoryboard(name: StoryboardName.otpViewController.rawValue, bundle: nil).instantiateInitialViewController() as? OtpViewController
 //        vc?.flow = .register
 //        source?.window?.rootViewController = vc
-    }
+//    }
 }
