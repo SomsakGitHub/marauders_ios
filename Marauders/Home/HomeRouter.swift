@@ -1,13 +1,11 @@
-import Foundation
 import UIKit
 
-protocol LoginRoutingLogic {
-    func otp()
+@objc protocol HomeRoutingLogic {
+    //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-class LoginRouter {
-    
-    weak var source: BaseViewController?
+class HomeRouter {
+    weak var viewController: HomeViewController?
     private let sceneFactory: SceneFactory
     
     init(sceneFactory: SceneFactory) {
@@ -17,7 +15,7 @@ class LoginRouter {
 
 // MARK: Routing (navigating to other screens)
 
-extension LoginRouter: LoginRoutingLogic {
+extension HomeRouter: HomeRoutingLogic {
     func otp() {
 //        let vc = UIStoryboard(name: StoryboardName.otpViewController.rawValue, bundle: nil).instantiateInitialViewController() as? OtpViewController
 //        vc?.flow = .register
