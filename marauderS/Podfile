@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'marauderS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for marauderS
+	pod 'SwiftLint'
+	pod 'RxSwift'
+	pod 'Alamofire'
+
+  target 'marauderSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'marauderSUITests' do
+    # Pods for testing
+  end
+
+end

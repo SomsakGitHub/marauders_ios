@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		105CFF04E08A0D0B0D395F7F /* Pods_marauderSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE9223F3B0DA874C2ABB5C1 /* Pods_marauderSTests.framework */; };
+		379CE79D9C2929FC09C4B7B7 /* Pods_marauderS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E184E1D2538D418550E64A /* Pods_marauderS.framework */; };
+		D243182A2BDF850892565E97 /* Pods_marauderS_marauderSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360568437C028FFA2CDDEE96 /* Pods_marauderS_marauderSUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FE97CBD92DC2C78E009E278B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +30,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DE9223F3B0DA874C2ABB5C1 /* Pods_marauderSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marauderSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		360568437C028FFA2CDDEE96 /* Pods_marauderS_marauderSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marauderS_marauderSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0AC6A0DE4913891507BADD /* Pods-marauderSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderSTests.release.xcconfig"; path = "Target Support Files/Pods-marauderSTests/Pods-marauderSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EF14861FEA5EB9B83D7EA49 /* Pods-marauderS-marauderSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderS-marauderSUITests.debug.xcconfig"; path = "Target Support Files/Pods-marauderS-marauderSUITests/Pods-marauderS-marauderSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70A6F67B24F8096398931E6D /* Pods-marauderSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderSTests.debug.xcconfig"; path = "Target Support Files/Pods-marauderSTests/Pods-marauderSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		904A65ADFEA79B27CB793FE8 /* Pods-marauderS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderS.debug.xcconfig"; path = "Target Support Files/Pods-marauderS/Pods-marauderS.debug.xcconfig"; sourceTree = "<group>"; };
+		98E184E1D2538D418550E64A /* Pods_marauderS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marauderS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A281FCC22CF7A936A7FDF4 /* Pods-marauderS-marauderSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderS-marauderSUITests.release.xcconfig"; path = "Target Support Files/Pods-marauderS-marauderSUITests/Pods-marauderS-marauderSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBE2F8385073CA0C6D68EAF6 /* Pods-marauderS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marauderS.release.xcconfig"; path = "Target Support Files/Pods-marauderS/Pods-marauderS.release.xcconfig"; sourceTree = "<group>"; };
 		FE97CBC72DC2C78D009E278B /* marauderS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marauderS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97CBD82DC2C78E009E278B /* marauderSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marauderSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97CBE22DC2C78E009E278B /* marauderSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marauderSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379CE79D9C2929FC09C4B7B7 /* Pods_marauderS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105CFF04E08A0D0B0D395F7F /* Pods_marauderSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +83,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D243182A2BDF850892565E97 /* Pods_marauderS_marauderSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638D22BFC6174A07ADEFB3EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				904A65ADFEA79B27CB793FE8 /* Pods-marauderS.debug.xcconfig */,
+				EBE2F8385073CA0C6D68EAF6 /* Pods-marauderS.release.xcconfig */,
+				6EF14861FEA5EB9B83D7EA49 /* Pods-marauderS-marauderSUITests.debug.xcconfig */,
+				E4A281FCC22CF7A936A7FDF4 /* Pods-marauderS-marauderSUITests.release.xcconfig */,
+				70A6F67B24F8096398931E6D /* Pods-marauderSTests.debug.xcconfig */,
+				5A0AC6A0DE4913891507BADD /* Pods-marauderSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2D17B4FEFD34668EC0D253E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98E184E1D2538D418550E64A /* Pods_marauderS.framework */,
+				360568437C028FFA2CDDEE96 /* Pods_marauderS_marauderSUITests.framework */,
+				2DE9223F3B0DA874C2ABB5C1 /* Pods_marauderSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FE97CBBE2DC2C78D009E278B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +120,8 @@
 				FE97CBDB2DC2C78E009E278B /* marauderSTests */,
 				FE97CBE52DC2C78E009E278B /* marauderSUITests */,
 				FE97CBC82DC2C78D009E278B /* Products */,
+				638D22BFC6174A07ADEFB3EB /* Pods */,
+				C2D17B4FEFD34668EC0D253E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE97CBEC2DC2C78E009E278B /* Build configuration list for PBXNativeTarget "marauderS" */;
 			buildPhases = (
+				86F19E3CE3EA38CD833E3D1B /* [CP] Check Pods Manifest.lock */,
 				FE97CBC32DC2C78D009E278B /* Sources */,
 				FE97CBC42DC2C78D009E278B /* Frameworks */,
 				FE97CBC52DC2C78D009E278B /* Resources */,
+				B8DE469BC77959C6DD185996 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +156,6 @@
 				FE97CBC92DC2C78D009E278B /* marauderS */,
 			);
 			name = marauderS;
-			packageProductDependencies = (
-			);
 			productName = marauderS;
 			productReference = FE97CBC72DC2C78D009E278B /* marauderS.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE97CBEF2DC2C78E009E278B /* Build configuration list for PBXNativeTarget "marauderSTests" */;
 			buildPhases = (
+				D1B4F7ECE1724ED5ED71F650 /* [CP] Check Pods Manifest.lock */,
 				FE97CBD42DC2C78E009E278B /* Sources */,
 				FE97CBD52DC2C78E009E278B /* Frameworks */,
 				FE97CBD62DC2C78E009E278B /* Resources */,
@@ -134,8 +178,6 @@
 				FE97CBDB2DC2C78E009E278B /* marauderSTests */,
 			);
 			name = marauderSTests;
-			packageProductDependencies = (
-			);
 			productName = marauderSTests;
 			productReference = FE97CBD82DC2C78E009E278B /* marauderSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE97CBF22DC2C78E009E278B /* Build configuration list for PBXNativeTarget "marauderSUITests" */;
 			buildPhases = (
+				63DC727069539CC72168F305 /* [CP] Check Pods Manifest.lock */,
 				FE97CBDE2DC2C78E009E278B /* Sources */,
 				FE97CBDF2DC2C78E009E278B /* Frameworks */,
 				FE97CBE02DC2C78E009E278B /* Resources */,
+				BB3AA06BBD822299E3997844 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,8 +201,6 @@
 				FE97CBE52DC2C78E009E278B /* marauderSUITests */,
 			);
 			name = marauderSUITests;
-			packageProductDependencies = (
-			);
 			productName = marauderSUITests;
 			productReference = FE97CBE22DC2C78E009E278B /* marauderSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +272,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63DC727069539CC72168F305 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marauderS-marauderSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86F19E3CE3EA38CD833E3D1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marauderS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8DE469BC77959C6DD185996 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marauderS/Pods-marauderS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marauderS/Pods-marauderS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marauderS/Pods-marauderS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3AA06BBD822299E3997844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marauderS-marauderSUITests/Pods-marauderS-marauderSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marauderS-marauderSUITests/Pods-marauderS-marauderSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marauderS-marauderSUITests/Pods-marauderS-marauderSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B4F7ECE1724ED5ED71F650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marauderSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE97CBC32DC2C78D009E278B /* Sources */ = {
@@ -385,6 +530,7 @@
 		};
 		FE97CBED2DC2C78E009E278B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904A65ADFEA79B27CB793FE8 /* Pods-marauderS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -393,6 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"marauderS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -422,6 +569,7 @@
 		};
 		FE97CBEE2DC2C78E009E278B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE2F8385073CA0C6D68EAF6 /* Pods-marauderS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -430,6 +578,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"marauderS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -459,6 +608,7 @@
 		};
 		FE97CBF02DC2C78E009E278B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A6F67B24F8096398931E6D /* Pods-marauderSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +631,7 @@
 		};
 		FE97CBF12DC2C78E009E278B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0AC6A0DE4913891507BADD /* Pods-marauderSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +654,7 @@
 		};
 		FE97CBF32DC2C78E009E278B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF14861FEA5EB9B83D7EA49 /* Pods-marauderS-marauderSUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -524,6 +676,7 @@
 		};
 		FE97CBF42DC2C78E009E278B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A281FCC22CF7A936A7FDF4 /* Pods-marauderS-marauderSUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
