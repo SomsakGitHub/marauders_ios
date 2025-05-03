@@ -24,7 +24,7 @@ struct RootView: View {
 
     var body: some View {
         if authentication.isValidated {
-            HomeView().environmentObject(authentication)
+            MainSceneView().environmentObject(authentication)
         } else {
 //            private lazy var scenesFactory: ScenesFactory = DefaultScenesFactory()
             //        guard let windowScene = (scene as? UIWindowScene) else {

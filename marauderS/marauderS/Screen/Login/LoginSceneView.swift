@@ -56,9 +56,11 @@ struct LoginSceneView: View {
     }
 
     func handleLogin() {
-        viewModel.login { success in
-            authentication.updateValidation(success: success)
-        }
+//        viewModel.login { success in
+//            authentication.updateValidation(success: success)
+//        }
+//        
+        authentication.updateValidation(success: true)
         
 //        if !viewModel.isLoggedIn {
 //            HomeView()
