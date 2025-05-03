@@ -19,13 +19,14 @@ struct marauderSApp: App {
 }
 
 struct RootView: View {
-    @State private var isLoggedIn = false
+    
+    @StateObject var authentication = Authentication()
 
     var body: some View {
-        if isLoggedIn {
-            HomeView()
+        if authentication.isValidated {
+            HomeView().environmentObject(authentication)
         } else {
-            private lazy var scenesFactory: ScenesFactory = DefaultScenesFactory()
+//            private lazy var scenesFactory: ScenesFactory = DefaultScenesFactory()
             //        guard let windowScene = (scene as? UIWindowScene) else {
             //            assertionFailure()
             //            return
@@ -37,8 +38,9 @@ struct RootView: View {
             //        )
             //        window?.makeKeyAndVisible()
             
-            scenesFactory.makeLoginScene()
+//            scenesFactory.makeLoginScene()
 //            LoginSceneView(isLoggedIn: $isLoggedIn)
+            LoginSceneView().environmentObject(authentication)
         }
     }
 }

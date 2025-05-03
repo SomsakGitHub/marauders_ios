@@ -25,8 +25,8 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginTouch(_ sender: Any) {
 //        let loginReq = LoginReq(email: emailTextFieldView.textField.text ?? "", password: passwordTextFieldView.textField.text ?? "")
-//        interactor?.login(req: loginReq)
-        setWindowRootView(storyboardName: .home)
+        interactor?.login(req: loginReq)
+//        setWindowRootView(storyboardName: .home)
     }
 }
 

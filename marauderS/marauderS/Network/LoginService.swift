@@ -3,8 +3,7 @@ import Alamofire
 
 enum LoginServiceEnum: Service {
     
-//    case login(req: LoginReq)
-    case login(req: String)
+    case login(req: LoginReq)
     
     var path: String {
         switch self {
@@ -32,8 +31,20 @@ enum LoginServiceEnum: Service {
 }
 
 class LoginService: BaseService {
-//    func login(req: LoginReq) -> Observable<LoginRes?> {
-//        let service = LoginServiceEnum.login(req: req)
-//        return execute(service: service, type: LoginRes.self)
-//    }
+    func login(req: LoginReq) -> Observable<LoginRes?> {
+        let service = LoginServiceEnum.login(req: req)
+        return execute(service: service, type: LoginRes.self)
+    }
+}
+
+struct LoginReq {
+    var email, password: String
+}
+
+struct LoginRes: Codable {
+    let data: String
+    
+    enum CodingKeys: String, CodingKey {
+        case data = "data_value"
+    }
 }

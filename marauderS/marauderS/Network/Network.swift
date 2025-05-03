@@ -13,7 +13,11 @@ public class Network {
     static func request<T: Codable>(service: Service, type: T.Type, completion: @escaping (
         _ result: Results<T>?) -> Void) {
             
-            guard let url = URL(string: service.baseURL + service.path) else {
+//            guard let url = URL(string: service.baseURL + service.path) else {
+//                return
+//            }
+            
+            guard let url = URL(string: "service.baseURL + service.path") else {
                 return
             }
             

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LoginSceneView: View {
-//    @Binding var isLoggedIn: Bool
-    let viewModel: LoginSceneViewModel
+    
+    @StateObject private var viewModel = LoginSceneViewModel()
+    @EnvironmentObject var authentication: Authentication
+    
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var showAlert: Bool = false
@@ -54,8 +56,14 @@ struct LoginSceneView: View {
     }
 
     func handleLogin() {
+        viewModel.login { success in
+            authentication.updateValidation(success: success)
+        }
+        
+//        if !viewModel.isLoggedIn {
+//            HomeView()
+//        }
         // Dummy validation
-//        isLoggedIn = true
 //        if email == "test@example.com" && password == "password123" {
 //            isLoggedIn = true
 //        } else {
@@ -64,11 +72,13 @@ struct LoginSceneView: View {
     }
 }
 
-//struct LoginView_Previews: PreviewProvider {
-//    static var previews: some View {
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
 //        let viewModel = DefaultLoginSceneViewModel()
-//        
+        
 //        LoginSceneView(viewModel: DefaultLoginSceneConfigurator()
 //            .configured(with: viewModel) as! LoginSceneViewModel)
-//    }
-//}
+//        LoginSceneView(isLoggedIn: .constant(false))
+        LoginSceneView()
+    }
+}
