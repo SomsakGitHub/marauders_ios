@@ -1,0 +1,3 @@
+#include "Configuration/Keys/PROD_KEY.xcconfig"
+#include "Configuration/Keys/DEFAULT_KEY.xcconfig"
+#include "Configuration/Projects/PROJECT.xcconfig"

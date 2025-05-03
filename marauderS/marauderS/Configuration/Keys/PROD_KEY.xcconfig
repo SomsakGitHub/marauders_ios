@@ -1,0 +1,3 @@
+APP_NAME = marauderS
+APP_BUNDLE_ID = marauderS.marauderS
+APP_ENVIRONMENT = PROD
