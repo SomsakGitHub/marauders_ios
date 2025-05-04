@@ -9,17 +9,7 @@ import SwiftUI
 
 struct MainSceneView: View {
     var body: some View {
-        TabView {
-            HomeSceneView()
-                .tabItem {
-                    Label("Home", systemImage: "house.fill")
-                }
-
-            SettingSceneView()
-                .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
-                }
-        }
+        FeedSceneView()
     }
 }
 

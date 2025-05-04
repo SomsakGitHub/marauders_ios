@@ -76,11 +76,6 @@ struct LoginSceneView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-//        let viewModel = DefaultLoginSceneViewModel()
-        
-//        LoginSceneView(viewModel: DefaultLoginSceneConfigurator()
-//            .configured(with: viewModel) as! LoginSceneViewModel)
-//        LoginSceneView(isLoggedIn: .constant(false))
         LoginSceneView()
     }
 }
