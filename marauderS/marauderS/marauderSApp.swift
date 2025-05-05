@@ -22,7 +22,7 @@ struct RootView: View {
 
     var body: some View {
         if !authentication.isValidated {
-            MainSceneView().environmentObject(authentication)
+            MainTabView().environmentObject(authentication)
         } else {
             LoginSceneView().environmentObject(authentication)
         }
