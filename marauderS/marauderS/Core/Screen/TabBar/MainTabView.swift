@@ -25,7 +25,7 @@ struct MainTabView: View {
                     selectedTabIndex = 0
                 }
                 .tag(0)
-            Text("Location")
+            LocationSceneView()
                 .tabItem {
                     VStack {
                         Image(systemName: selectedTabIndex == 1 ? "house.fill" : "house")
