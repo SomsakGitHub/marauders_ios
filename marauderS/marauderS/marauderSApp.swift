@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct marauderSApp: App {
@@ -13,6 +14,7 @@ struct marauderSApp: App {
         WindowGroup {
             RootView()
         }
+        .modelContainer(for: Destination.self)
     }
 }
 
