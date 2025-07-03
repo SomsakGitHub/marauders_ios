@@ -1,78 +1,77 @@
-//
-//  LocationSceneView.swift
-//  marauderS
-//
-//  Created by somsak02061 on 6/5/2568 BE.
-//
-
 import SwiftUI
 import MapKit
 import SwiftData
 
 struct LocationSceneView: View {
     
-//    @State private var cameraPosition: MapCameraPosition = .automatic
-    @State private var cameraPosition: MapCameraPosition = .userLocation(fallback: .automatic)
-    @State private var visibleRegion: MKCoordinateRegion?
-    @Query private var destinations: [Destination]
-    @State private var destination: Destination?
-    
-    @StateObject var locationManager = LocationManager()
-    
-//    var manager = CLLocationManager()
-    
+    @State private var tappedCoordinate: CLLocationCoordinate2D?
+
     var body: some View {
-//        Map(position: $cameraPosition) {
-//            if let destination {
-//                ForEach(destination.placemarks) { placemark in
-//                    Marker(coordinate: placemark.coordinate) {
-//                        Label(placemark.name, systemImage: "star")
-//                    }
-//                    .tint(.yellow)
-//                }
-//            }
-//        }
-        
-//        .onMapCameraChange(frequency: .onEnd){ context in
-//            visibleRegion = context.region
-//        }
-        
-        Map(position: $cameraPosition){
-            UserAnnotation()
-        }
-        .mapControls{
-            MapUserLocationButton()
-        }
-        
-        .onAppear {
-
-//            destination = destinations.first
-//            
-//        let paris = Destination(
-//            name: "Paris",
-//            latitude: 48.856788,
-//            longitude: 2.351077,
-//            latitudeDelta: 0.15,
-//            longitudeDelta: 0.15
-//        )
-//            destination = paris
-//            
-//            if let region = destination?.region {
-//                cameraPosition = .region(region)
-//            }
+        VStack {
+            CustomMap(coordinate: $tappedCoordinate)
             
-//            manager.requestWhenInUseAuthorization()
-            locationManager.requestLocation()
-//            print("latitude=>", manager.location?.coordinate.latitude)
-//            print("longitude=>", manager.location?.coordinate.longitude)
-            
-
-            
+            if let coord = tappedCoordinate {
+                //                    Text("Latitude: \(coord.latitude)")
+                //                    Text("Longitude: \(coord.longitude)")
+            } else {
+                //                    Text("Tap the map to get coordinate")
+            }
         }
+        .padding()
     }
 }
 
 #Preview {
     LocationSceneView()
         .modelContainer(Destination.preview)
+}
+
+struct CustomMap: UIViewRepresentable {
+    @Binding var coordinate: CLLocationCoordinate2D?
+    var locationManager = LocationManager()
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView()
+        mapView.showsUserLocation = true
+        
+        locationManager.requestLocation()
+        
+        // ไปยังตำแหน่งผู้ใช้ทันที
+        if let location = locationManager.manager.location?.coordinate {
+            let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            mapView.setRegion(region, animated: true)
+        }
+        
+        let gesture = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
+        mapView.addGestureRecognizer(gesture)
+        return mapView
+    }
+
+    func updateUIView(_ uiView: MKMapView, context: Context) {}
+
+    class Coordinator: NSObject {
+        var parent: CustomMap
+
+        init(_ parent: CustomMap) {
+            self.parent = parent
+        }
+
+        @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+            let location = gesture.location(in: gesture.view)
+            if let mapView = gesture.view as? MKMapView {
+                let coordinate = mapView.convert(location, toCoordinateFrom: mapView)
+                parent.coordinate = coordinate
+
+                // Optional: Drop pin
+                mapView.removeAnnotations(mapView.annotations)
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = coordinate
+                mapView.addAnnotation(annotation)
+            }
+        }
+    }
 }

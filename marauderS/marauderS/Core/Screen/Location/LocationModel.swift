@@ -1,10 +1,3 @@
-//
-//  LocationModel.swift
-//  marauderS
-//
-//  Created by somsak02061 on 8/5/2568 BE.
-//
-
 import SwiftData
 import MapKit
 

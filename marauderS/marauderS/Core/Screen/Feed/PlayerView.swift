@@ -1,10 +1,3 @@
-//
-//  PlayerView.swift
-//  marauderS
-//
-//  Created by somsak02061 on 4/5/2568 BE.
-//
-
 import SwiftUI
 import AVKit
 

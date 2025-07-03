@@ -19,11 +19,13 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.delegate = self
 //        manager.startUpdatingHeading()
         manager.requestWhenInUseAuthorization()
+//        manager.startUpdatingLocation()
     }
     
     func requestLocation() {
         manager.requestLocation()
     }
+    
     
 //    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
 //        degrees = newHeading.trueHeading
@@ -31,6 +33,9 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         location = locations.first?.coordinate
+        GlobalVariable.shared.location = location
+        print("location=>", location?.latitude)
+        print("location=>", location?.longitude)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
